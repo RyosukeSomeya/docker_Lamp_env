@@ -13,7 +13,7 @@ P: PHP7.3
 
 ### 使用方法
 - 前提条件
-  * DokcerがPCにインストールされており、docker-composeコマンドが使用できる様になっていること。
+  * DokcerがPCにインストールされており、docker-composeコマンドが使用できる様になっていること。<br>
   ※確認`docker-compose --version`
   * docker for Macで動作確認済
 
