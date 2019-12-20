@@ -7,7 +7,8 @@ A: Apache2.4
 M: MySQL 5.7
 P: PHP7.3
 ```
-![docker-compose-structure](https://user-images.githubusercontent.com/40926770/71266277-6a5b0e00-238b-11ea-8036-e8289a015d1e.png)
+![Untitled Diagram (2)](https://user-images.githubusercontent.com/40926770/71266481-d9d0fd80-238b-11ea-9020-30c517155ec9.png)
+
 
 
 ### 使用方法
