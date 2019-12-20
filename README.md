@@ -11,13 +11,13 @@ dbサーバー: MySQL 5.7
   ※確認`docker-compose --version`
   * docker for Macで動作確認済
 
-#### Lamp環境の構築と実行
-1. webサーバーとDBサーバーのコンテナを実行
+### Lamp環境の構築と実行
+####  1. webサーバーとDBサーバーのコンテナを実行
 ```
 $ cd Lamp_env #<= docker-compose.ymlのディレクトリに移動
 $ docker-compose up -d
 ```
-2. 正常に実行されているか確認(一例)
+#### 2. 正常に実行されているか確認(一例)
   - webサーバー
     - ブラウザで`127.0.0.1`もしくは`localhost`を開き、PHPのバージョン情報一覧が表示されればOK
 
@@ -29,14 +29,15 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 5af45db97332        lamp_env_web        "/usr/sbin/httpd -DF…"   27 minutes ago      Up 27 minutes       0.0.0.0:80->80/tcp                  web_server
 50bac802ded7        lamp_env_db         "docker-entrypoint.s…"   27 minutes ago      Up 27 minutes       0.0.0.0:3306->3306/tcp, 33060/tcp   mysql_server
 ```
-3. 各コンテナへのログイン(アタッチ)
+#### 3. 各コンテナへのログイン(アタッチ)
 ```
 $ docker exec -it [コンテナID]または[コンテナ名] /bin/sh
 ```
 
-4. その他
+#### 4. その他
   - webサーバーのドキュメントルート
-  ローカルの`Lamp_env/web_server/php`配下は、httpdのドキュメントルートにマウントされるので、phpファイルを`Lamp_env/web_server/php`配下に配置することで、実行の確認ができる。
+
+    ローカルの`Lamp_env/web_server/php`配下は、httpdのドキュメントルートにマウントされるので、phpファイルを`Lamp_env/web_server/php`配下に配置することで、実行の確認ができる。
 
   - DBサーバーからMySQLへの接続
 ```
