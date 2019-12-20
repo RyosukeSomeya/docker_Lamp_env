@@ -1,10 +1,15 @@
 # Docker_LAMP environment for learning
-## Dockerで構築した学習用のLAMP環境
+## DockerComposeで構築する学習用のLAMP環境
 ### 構築される環境
 ```
-webサーバー : CentOS7.6
-dbサーバー: MySQL 5.7
+L: CentOS7.6
+A: Apache2.4
+M: MySQL 5.7
+P: PHP7.3
 ```
+![docker-compose-structure](https://user-images.githubusercontent.com/40926770/71266277-6a5b0e00-238b-11ea-8036-e8289a015d1e.png)
+
+
 ### 使用方法
 - 前提条件
   * DokcerがPCにインストールされており、docker-composeコマンドが使用できる様になっていること。
