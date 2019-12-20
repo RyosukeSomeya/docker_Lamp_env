@@ -7,7 +7,7 @@ A: Apache2.4
 M: MySQL 5.7
 P: PHP7.3
 ```
-![Untitled Diagram (2)](https://user-images.githubusercontent.com/40926770/71266481-d9d0fd80-238b-11ea-9020-30c517155ec9.png)
+![docker-compose](https://user-images.githubusercontent.com/40926770/71268084-7052ee00-238f-11ea-9b16-d1a715f185a0.png)
 
 
 
