@@ -6,7 +6,9 @@ RUN  yum -y install http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
 RUN  yum -y install --enablerepo=remi,remi-php73 php php-mbstring php-xml php-xmlrpc php-gd php-pdo php-pecl-mcrypt php-mysqlnd php-pecl-mysql
 
 # php設定
-COPY ./index.php /var/www/html/index.php
+# 確認用
+RUN echo '<?php phpinfo();' > /var/www/html/index.php
+COPY ./php.ini  /etc/php.ini
 
 # httpd 起動
 CMD ["/usr/sbin/httpd", "-DFOREGROUND"]
