@@ -50,3 +50,10 @@ $ docker exec -it [コンテナID]または[コンテナ名] /bin/sh
 $ mysql -u root -p root
 ```
 初期はrootユーザーのみなので、適宜ユーザーを作成する。
+
+ - webサーバーからMySqlサーバーへmysqlコマンドで接続が必要な場合
+```
+# yum -y install mysql
+# mysql -u root -h mysql_server -p
+```
+
