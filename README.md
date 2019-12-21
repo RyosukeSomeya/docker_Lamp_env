@@ -53,7 +53,7 @@ $ mysql -u root -p root
 
  - webサーバーからMySqlサーバーへmysqlコマンドで接続が必要な場合
 ```
-# yum -y install mysql
+# yum -y install mysql #<= mysqlをインストール
 # mysql -u root -h mysql_server -p
 ```
 
