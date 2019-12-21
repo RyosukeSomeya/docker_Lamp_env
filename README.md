@@ -11,7 +11,7 @@ P: PHP7.3
 
 
 
-### 使用方法
+## 使用方法
 - 前提条件
   * DokcerがPCにインストールされており、docker-composeコマンドが使用できる様になっていること。<br>
   ※確認`docker-compose --version`
@@ -28,7 +28,7 @@ $ docker-compose up -d
     - ブラウザで`127.0.0.1`もしくは`localhost`を開き、PHPのバージョン情報一覧が表示されればOK
 
   - webサーバー・DBサーバー共通
-`docker ps`コマンドを実行し*lamp_env_web*と*lamp_env_db*のコンテナが存在し、STATUS項目がUpになっていること
+    - `docker ps`コマンドを実行し*lamp_env_web*と*lamp_env_db*のコンテナが存在し、STATUS項目がUpになっていること
 ```
 $ docker ps
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                               NAMES
