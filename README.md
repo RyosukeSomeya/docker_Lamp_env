@@ -47,7 +47,7 @@ $ docker exec -it [コンテナID]または[コンテナ名] /bin/sh
 
   - DBサーバーからMySQLへの接続
 ```
-$ mysql -u root -p root
+# mysql -u root -p root
 ```
 初期はrootユーザーのみなので、適宜ユーザーを作成する。
 
