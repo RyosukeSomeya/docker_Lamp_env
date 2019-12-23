@@ -21,7 +21,7 @@ P: PHP7.3
 ####  1. webサーバーとDBサーバーのコンテナを実行
 ```
 $ cd Lamp_env #<= docker-compose.ymlのディレクトリに移動
-$ docker-compose up -d
+$ docker-compose up -d --build
 ```
 #### 2. 正常に実行されているか確認(一例)
   - webサーバー
