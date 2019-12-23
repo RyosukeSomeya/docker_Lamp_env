@@ -41,11 +41,11 @@ $ docker exec -it [コンテナID]または[コンテナ名] /bin/sh
 ```
 
 #### 4. その他
-  - webサーバーのドキュメントルート
+##### webサーバーのドキュメントルート
 
     ローカルの`Lamp_env/web_server/php`配下は、httpdのドキュメントルートにマウントされるので、phpファイルを`Lamp_env/web_server/php`配下に配置することで、実行の確認ができる。
 
-  - DBサーバーからMySQLへの接続
+##### DBサーバーからMySQLへの接続
 ```
 # mysql -u root -p root
 ```
@@ -54,7 +54,7 @@ $ docker exec -it [コンテナID]または[コンテナ名] /bin/sh
  ※ 初期はrootユーザーのみなので、適宜ユーザーを作成する。
   
 
-  - ホストマシン(dockerを起動しているPC)からのmysqlへの接続
+ ##### ホストマシン(dockerを起動しているPC)からのmysqlへの接続
  ```
  $ mysql -u root -h 127.0.0.1 --port=3306 -p
  ```
@@ -62,7 +62,7 @@ $ docker exec -it [コンテナID]または[コンテナ名] /bin/sh
  
  ※ 初期はrootユーザーのみなので、適宜ユーザーを作成する。
 
- - webサーバーからMySqlサーバーへmysqlコマンドで接続が必要な場合
+##### webサーバーからMySqlサーバーへmysqlコマンドで接続が必要な場合
 ```
 # yum -y install mysql #<= mysqlをインストール
 # mysql -u root -h mysql_server -p
