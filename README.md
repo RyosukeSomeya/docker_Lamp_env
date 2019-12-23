@@ -49,6 +49,11 @@ $ docker exec -it [コンテナID]または[コンテナ名] /bin/sh
 ```
 # mysql -u root -p root
 ```
+  - ホストマシン(dockerを起動しているPC)からのmysqlへの接続
+ ```
+ $ mysql -u root -h 127.0.0.1 --port=3306 -p
+ ```
+ ※ mysqlコマンドが使用できることが条件
 初期はrootユーザーのみなので、適宜ユーザーを作成する。
 
  - webサーバーからMySqlサーバーへmysqlコマンドで接続が必要な場合
